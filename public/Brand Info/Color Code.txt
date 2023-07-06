@@ -1,0 +1,12 @@
+Color code
+FF9F1C orange
+CBF3F0 l.blue
+2EC4B6 torquise
+FFFFFF white
+FFBF69 l.orange
+
+
+Font: own
+
+
+product img - orange border

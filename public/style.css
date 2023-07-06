@@ -1,0 +1,132 @@
+*{
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box !important;
+    font-family: 'Roboto', sans-serif;
+}
+.bg_torquise{
+    background-color: #2EC4B6  !important;
+    color: black !important;
+}
+.bg_black{
+    background-color: black !important;
+    color: white !important;
+
+  
+}
+.bg_orange{
+    background-color: #FFBF69 !important;
+    color: black !important;
+
+}
+.top_text li{
+    list-style-type: none !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    margin-top: 5px !important;
+    font-size: 1.2em !important;
+}
+.cover_img_section1, .cover_img_section5{
+    height: 100wh !important;
+}
+.pd_fs{
+    font-size: 0.7em !important;
+    text-align: left !important;
+}
+.bg_container_subtle{
+   border: 5px solid #2EC4B6  !important;
+    color: black !important;
+}
+/* Reveal On Scroll */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+
+/* Back To Top Btn */
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #2EC4B6 ; 
+    color: black;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #FFBF69; 
+  }
+  .address_fs{
+    font-size: 0.7em !important;
+    margin: 3px;
+    color: #2EC4B6;
+
+  }
+  .top_text i{
+    background-color: black;
+    color: #2EC4B6;
+    padding: 2px !important;
+    border-radius: 100% !important;
+    box-shadow: 2px 2px 5px #2EC4B6 !important;
+  }
+  .address_fs:hover, .top_text i:hover{
+   color: #FFBF69; 
+cursor: pointer;
+  }
+  #search_btn{
+    background-color: black;
+    color: #2EC4B6; 
+  }
+  #search_btn:hover{
+    background-color: #FFBF69; 
+    color: black;
+  }
+.text_link {
+    text-decoration:none !important;
+    color: black;
+}
+.text_link:hover, .text_link:focus, .text_link:active{
+    text-shadow: 2px 2px 5px black !important;
+
+}
+
+.logo_text{
+  text-shadow: 2px 2px 5px black;
+}
+.logo_text:hover{
+  text-shadow: 2px 2px 5px #FFBF69 !important;
+
+}
+.legal-policies li, .about-us li{
+  list-style-type: none;
+  margin: 10px !important;
+}
+#order_placed_successfully{
+  width: 300px !important;
+  margin: 0 auto !important;
+}
+/* #productImage{
+  width: 200px !important;
+
+} */
+/* .cardHeight{
+  height: 55% !important;
+  width: 500px !important;
+} */
