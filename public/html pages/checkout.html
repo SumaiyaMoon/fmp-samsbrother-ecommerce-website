@@ -142,61 +142,112 @@
                         <span class="p-2 mt-2">Payment Method : </span>
                        <span class="p-2 mt-2"> COD &nbsp; (Cash On Delivery)</span>
                     </div>
-                    <form class="row g-3 m-2">
+                    <!-- <form class="row g-3 m-2">
                         <div class="col-md-6">
                             <label for="inputEmail4" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="John Doe">
+                            <input  type="text" class="form-control" id="inputEmail4" placeholder="John Doe">
                         </div>
                         <div class="col-md-6">
                         
                             <label for="inputZip" class="form-label">Contact Number</label>
-                            <input class="form-control" placeholder="+92 000 0000000" id="floatingTextarea"></input>
+                            <input  class="form-control" placeholder="+92 000 0000000" id="floatingTextarea"></input>
                          
                         </div>
                         <div class="col-12">
                             <label for="inputEmail4" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="mymail@.com">
+                            <input  type="email" class="form-control" id="inputEmail4" placeholder="mymail@.com">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Address Line 1</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Province, State, etc.">
+                            <input  type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Province, State, etc.">
                         </div>
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label">Address Line 2</label>
-                            <input type="text" class="form-control" id="inputAddress2"
+                            <input  type="text" class="form-control" id="inputAddress2"
                                 placeholder="Apartment, studio, or floor">
                         </div>
                         <div class="col-md-6">
                             <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity" placeholder="City">
+                            <input  type="text" class="form-control" id="inputCity" placeholder="City">
                         </div>
                         <div class="col-md-4">
                             <label for="inputState" class="form-label">State</label>
-                            <input type="text" class="form-control" id="inputState" placeholder="State">
+                            <input  type="text" class="form-control" id="inputState" placeholder="State">
 
                             </select>
                         </div>
                         <div class="col-md-2">
                             <label for="inputZip" class="form-label">Zip Code</label>
-                            <input type="text" class="form-control" id="inputZip" placeholder="7450">
+                            <input  type="text" class="form-control" id="inputZip" placeholder="7450">
                         </div>
                         
                         <div class="col-12">
                             <div class="form-check">
-                                <input class="" type="checkbox" id="gridCheck">
+                                <input  class="" type="checkbox" id="gridCheck">
                                 <label class="form-label" for="gridCheck">I have filled all info correctly. </label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-check">
-                                <input class="" type="checkbox" id="gridCheck">
+                                <input  class="" type="checkbox" id="gridCheck">
                                 <label class="form-label" for="gridCheck">I Confirm my order</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn bg_torquise m-2 col fw-bolder px-5 py-2"><a href="placed.html" class="bg_torquise" style="text-decoration: none;">Place Order</a></button>
                         </div>
+                    </form> -->
+                    <form class="row g-3 m-2" id="checkout-form">
+                        <div class="col-md-6">
+                            <label for="nameInput" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="John Doe" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="contactInput" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="contactInput" placeholder="+92 000 0000000" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="emailInput" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="mymail@.com" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="addressInput" class="form-label">Address Line 1</label>
+                            <input type="text" class="form-control" id="addressInput" placeholder="1234 Main St, Province, State, etc." required>
+                        </div>
+                        <div class="col-12">
+                            <label for="address2Input" class="form-label">Address Line 2</label>
+                            <input type="text" class="form-control" id="address2Input" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="cityInput" class="form-label">City</label>
+                            <input type="text" class="form-control" id="cityInput" placeholder="City" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="stateInput" class="form-label">State</label>
+                            <input type="text" class="form-control" id="stateInput" placeholder="State" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="zipCodeInput" class="form-label">Zip Code</label>
+                            <input type="text" class="form-control" id="zipCodeInput" placeholder="7450" required>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="infoCheck" required>
+                                <label class="form-check-label" for="infoCheck">I have filled all info correctly.</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="orderCheck" required>
+                                <label class="form-check-label" for="orderCheck">I Confirm my order</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn bg_torquise m-2 col fw-bolder px-5 py-2" onclick="validateForm()">Place Order</button>
+                        </div>
                     </form>
+                    
+                    
                 </div>
 
 
@@ -321,5 +372,6 @@
 </body>
 <!-- Custom JS -->
 <script src="../app.js"></script>
+<script src="../js pages/cart.js"></script>
 
 </html>
